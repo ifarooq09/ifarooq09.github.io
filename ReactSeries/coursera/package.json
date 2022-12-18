@@ -4,9 +4,17 @@
   "description": "\"This is coursera front-end development course series\"",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
   },
-  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ifarooq09/ifarooq09.github.io/tree/main/ReactSeries/coursera"
+  },
   "author": "Ibrahim Farooq",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.2.0"
+  }
 }
