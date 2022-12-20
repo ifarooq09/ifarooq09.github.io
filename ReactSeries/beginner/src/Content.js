@@ -2,23 +2,23 @@ import React from 'react';
 import { useState } from 'react';
 
 const Content = () => {
-    const [name, setName] = useState('Ibrahim');
-    const [count, setCount] = useState(0);
-    const callingRandomNames = () => {
-        const names = ['Ibrahim','Mustafa','Waseem'];
-        const int = Math.floor(Math.random() * 3);
-        setName(names[int]);
+    const [name, setName] = useState([
+      {
+        id:1,
+        checked: false,
+        item: "Item 2"
+      },
+      {
+        id: 2,
+        checked: false,
+        item: "Item 2"
+      },
+      {
+        id: 3,
+        checked: false,
+        item: "Item 3"
       }
-
-    const handleClick = () => {
-      console.log(name)
-    }
-
-    const handleClick2 = () => {
-      setCount(count + 1)
-      console.log(count)
-    }
-
+    ]);
         
   return (
     <main>
